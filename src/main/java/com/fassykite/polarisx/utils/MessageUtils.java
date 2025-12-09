@@ -1,12 +1,26 @@
 package com.fassykite.polarisx.utils;
 
-import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 
 public class MessageUtils {
+
     private static final MiniMessage MINI = MiniMessage.miniMessage();
 
-    public static MiniMessage mini() { return MINI; }
-    public static Component color(String msg) { return MINI.deserialize(msg); }
-    public static Component noPermission() { return color("<red>Нет прав!</red>"); }
+    public static MiniMessage miniMessage() {
+        return MINI;
+    }
+
+    public static void sendMessage(CommandSender sender, String message) {
+        if (sender instanceof Player player) {
+            player.sendMessage(MINI.deserialize(message));
+        } else {
+            sender.sendMessage(MINI.serialize(MINI.deserialize(message)));
+        }
+    }
+
+    public static void noPermission(CommandSender sender) {
+        sendMessage(sender, "<red>Недостаточно прав!</red>");
+    }
 }

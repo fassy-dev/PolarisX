@@ -19,7 +19,7 @@ public class PolarisManager {
     }
 
     public void registerCheck(Check check) {
-        checks.put(check.getCheckType().name().toLowerCase(), check);
+        checks.put(check.getType().name().toLowerCase(), check);
     }
 
     public Check getCheck(String name) {

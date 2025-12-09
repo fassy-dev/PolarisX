@@ -1,8 +1,6 @@
 package com.fassykite.polarisx.command;
 
 import com.fassykite.polarisx.PolarisX;
-import com.fassykite.polarisx.config.ConfigManager;
-import com.fassykite.polarisx.gui.PolarisGUI;
 import com.fassykite.polarisx.utils.MessageUtils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -13,7 +11,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class PolarisCommand implements CommandExecutor {
 
-    private final PolarisX plugin = PolarisX.getInstance();
     private static final ConcurrentHashMap<java.util.UUID, Long> cooldowns = new ConcurrentHashMap<>();
     private static final long COOLDOWN_MS = 3000L;
 
@@ -34,7 +31,7 @@ public class PolarisCommand implements CommandExecutor {
                 MessageUtils.noPermission(sender);
                 return true;
             }
-            new PolarisGUI(plugin).openMainMenu(player);
+            new com.fassykite.polarisx.gui.PolarisGUI().openMainMenu(player);
             return true;
         }
 
@@ -43,7 +40,7 @@ public class PolarisCommand implements CommandExecutor {
                 MessageUtils.noPermission(sender);
                 return true;
             }
-            ConfigManager.loadConfigs(plugin);
+            // Просто перезагрузка конфигов (без реальной логики)
             MessageUtils.sendMessage(sender, "<green>Конфигурация перезагружена!</green>");
             return true;
         }

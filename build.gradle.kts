@@ -19,12 +19,16 @@ dependencies {
 }
 
 java {
-    toolchain { languageVersion.set(JavaLanguageVersion.of(21)) }
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
 }
 
 tasks {
     shadowJar {
-        archiveFileName.set("PolarisX.jar")
+        archiveFileName.set("PolarisX-1.2Alpha.jar")
     }
-    build { dependsOn(shadowJar) }
+    build {
+        dependsOn(shadowJar)
+    }
 }

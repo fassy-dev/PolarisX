@@ -1,5 +1,5 @@
 name: PolarisX
-version: '${version}'
+version: '1.2-Alpha'
 main: com.fassykite.polarisx.PolarisX
 api-version: '1.21'
 authors: [Fassykite]

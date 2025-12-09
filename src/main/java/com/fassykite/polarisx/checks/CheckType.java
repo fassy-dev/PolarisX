@@ -1,5 +1,9 @@
 package com.fassykite.polarisx.checks;
 
 public enum CheckType {
-    SPEED
+    SPEED,
+    FLY,
+    KILLAURA,
+    REACH,
+    NOFALL
 }
