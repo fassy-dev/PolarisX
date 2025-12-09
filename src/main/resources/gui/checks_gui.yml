@@ -1,0 +1,60 @@
+# Меню проверок
+title: "<gradient:#4A90E2:#9013FE>Проверки</gradient>"
+size: 27
+
+border:
+  enabled: false
+
+slots:
+  10:
+    item: FEATHER
+    name: "Speed %status_speed%"
+    lore:
+      - "<gray>Проверка на чит Speed"
+      - ""
+      - "<gold>ЛКМ <gray>- Переключить"
+
+  11:
+    item: ELYTRA
+    name: "Fly %status_fly%"
+    lore:
+      - "<gray>Проверка на чит Fly"
+      - ""
+      - "<gold>ЛКМ <gray>- Переключить"
+
+  12:
+    item: DIAMOND_SWORD
+    name: "KillAura %status_killaura%"
+    lore:
+      - "<gray>Проверка на чит KillAura"
+      - ""
+      - "<gold>ЛКМ <gray>- Переключить"
+
+  13:
+    item: STICK
+    name: "Reach %status_reach%"
+    lore:
+      - "<gray>Проверка на чит Reach"
+      - ""
+      - "<gold>ЛКМ <gray>- Переключить"
+
+  14:
+    item: FEATHER
+    name: "NoFall %status_nofall%"
+    lore:
+      - "<gray>Проверка на чит NoFall"
+      - ""
+      - "<gold>ЛКМ <gray>- Переключить"
+
+  15:
+    item: PAPER
+    name: "MorePackets %status_morepackets%"
+    lore:
+      - "<gray>Проверка на флуд пакетами"
+      - ""
+      - "<gold>ЛКМ <gray>- Переключить"
+
+  22:
+    item: ARROW
+    name: "<gray>← Назад</gray>"
+    lore: []

@@ -1,0 +1,85 @@
+# Главное меню PolarisX
+title: "<gradient:#4A90E2:#9013FE>PolarisX v%version%</gradient>"
+size: 54
+
+# Границы
+border:
+  enabled: true
+  item: GRAY_STAINED_GLASS_PANE
+  name: " "
+
+# Слоты
+slots:
+  # Статистика сервера
+  4:
+    item: NETHER_STAR
+    name: "<gradient:#4A90E2:#9013FE>📊 Статистика сервера</gradient>"
+    lore:
+      - "<gray>Игроков онлайн: <gold>%online_players%"
+      - "<gray>TPS: %tps%"
+      - "<gray>Память: %memory%"
+      - ""
+      - "<gray>Проверок активно: <green>%active_checks%"
+      - "<gray>Всего нарушений: <red>%total_violations%"
+      - ""
+      - "<dark_gray>Система мониторинга PolarisX"
+
+  # Проверки
+  20:
+    item: BOOK
+    name: "<gradient:#4A90E2:#9013FE>🔍 Проверки</gradient>"
+    lore:
+      - "<gray>Speed, Fly, KillAura, Reach, NoFall"
+      - ""
+      - "<gold>ЛКМ <gray>- Открыть меню проверок"
+
+  # Настройки
+  22:
+    item: REDSTONE_TORCH
+    name: "<gradient:#4A90E2:#9013FE>⚙ Настройки</gradient>"
+    lore:
+      - "<gray>Алерты, наказания, GUI"
+      - ""
+      - "<gold>ЛКМ <gray>- Открыть настройки"
+
+  # Игроки
+  24:
+    item: PLAYER_HEAD
+    name: "<gradient:#4A90E2:#9013FE>👤 Игроки</gradient>"
+    lore:
+      - "<gray>Нарушения, статистика"
+      - ""
+      - "<gold>ЛКМ <gray>- Поиск игрока"
+
+  # Информация об игроке (автоматически заполняется)
+  8:
+    item: PLAYER_HEAD
+    name: "<gradient:#4A90E2:#9013FE>👤 %player_name%</gradient>"
+    lore:
+      - "<gray>UUID: <gold>%player_uuid%"
+      - "<gray>Пинг: <green>%player_ping%мс"
+      - "<gray>Мир: <gold>%player_world%"
+      - ""
+      - "<gray>Нарушений: %player_violations_color%%player_violations%"
+      - "<gray>Статус: %player_status%"
+      - ""
+      - "<gold>ЛКМ <gray>- Подробная информация"
+
+  # Кнопки управления
+  48:
+    item: COMMAND_BLOCK
+    name: "<gradient:#4A90E2:#9013FE>🔄 Перезагрузить</gradient>"
+    lore:
+      - "<gray>Требуется <gold>polarisx.reload</gold>"
+
+  49:
+    item: LIME_DYE
+    name: "<gradient:#4A90E2:#9013FE>✅ Включен</gradient>"
+    lore:
+      - "<gray>Статус: <green>АКТИВНА"
+
+  50:
+    item: REDSTONE_TORCH
+    name: "<gradient:#4A90E2:#9013FE>⚡ Отладка</gradient>"
+    lore:
+      - "<gray>Режим: <gold>ВКЛЮЧЕН"

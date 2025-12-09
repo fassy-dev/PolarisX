@@ -1,0 +1,38 @@
+# Основные настройки PolarisX
+version: 1.0
+author: Fassykite
+
+# GUI
+gui:
+  title-color: "#4A90E2"
+  secondary-color: "#9013FE"
+  use-gradients: true
+  use-sounds: true
+  border-item: GRAY_STAINED_GLASS_PANE
+
+# Система
+system:
+  debug: false
+  log-violations: true
+  console-alerts: true
+
+# Уведомления
+alerts:
+  enabled: true
+  actionbar: false
+  sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  sound-volume: 1.0
+  sound-pitch: 1.0
+
+# Наказания
+punishments:
+  enabled: true
+  warn-threshold: 5
+  kick-threshold: 10
+  ban-threshold: 15
+
+# Интеграции
+integrations:
+  placeholderapi: true
+  protocollib: true
+  vault: false

@@ -1,15 +1,10 @@
 plugins {
-    java
+    id("java")
     id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
 group = "com.fassykite"
-version = "1.0.0"
-description = "PolarisX - Advanced Anti-Cheat System"
-
-java {
-    toolchain.languageVersion.set(JavaLanguageVersion.of(21))
-}
+version = "1.0"
 
 repositories {
     mavenCentral()
@@ -18,26 +13,18 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
-    compileOnly("me.clip:placeholderapi:2.11.6")
-
+    compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
+    compileOnly("me.clip:placeholderapi:2.11.7")
     implementation("net.kyori:adventure-text-minimessage:4.17.0")
-    implementation("net.kyori:adventure-platform-bukkit:4.3.3")
+}
+
+java {
+    toolchain { languageVersion.set(JavaLanguageVersion.of(21)) }
 }
 
 tasks {
-    compileJava {
-        options.encoding = "UTF-8"
-        options.release.set(21)
-    }
-
     shadowJar {
-        archiveClassifier.set("")
-        archiveFileName.set("PolarisX-${version}.jar")
-        minimize()
+        archiveFileName.set("PolarisX.jar")
     }
-
-    build {
-        dependsOn(shadowJar)
-    }
+    build { dependsOn(shadowJar) }
 }

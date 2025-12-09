@@ -5,10 +5,10 @@ import com.fassykite.polarisx.checks.impl.SpeedCheck;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CheckManager {
+public class PolarisManager {
     private final Map<String, Check> checks = new HashMap<>();
 
-    public CheckManager() {
+    public PolarisManager() {
         registerCheck(new SpeedCheck());
     }
 
@@ -18,9 +18,5 @@ public class CheckManager {
 
     public Check getCheck(String name) {
         return checks.get(name.toLowerCase());
-    }
-
-    public int getActiveChecks() {
-        return (int) checks.values().stream().filter(Check::isEnabled).count();
     }
 }

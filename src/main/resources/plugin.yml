@@ -1,0 +1,14 @@
+name: PolarisX
+version: '${version}'
+main: com.fassykite.polarisx.PolarisX
+api-version: '1.21'
+authors: [Fassykite]
+depend: [PlaceholderAPI]
+
+commands:
+  polaris:
+    permission: polarisx.menu
+
+permissions:
+  polarisx.menu:
+    default: op

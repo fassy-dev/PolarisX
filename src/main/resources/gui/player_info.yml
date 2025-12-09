@@ -1,0 +1,57 @@
+# Информация об игроке
+title: "<gradient:#4A90E2:#9013FE>Информация об игроке</gradient>"
+size: 27
+
+border:
+  enabled: false
+
+slots:
+  13:
+    item: PLAYER_HEAD
+    name: "<gradient:#4A90E2:#9013FE>👤 %target_name%</gradient>"
+    lore:
+      - "<gray>UUID: <gold>%target_uuid%"
+      - "<gray>Пинг: <green>%target_ping%мс"
+      - "<gray>Мир: <gold>%target_world%"
+      - ""
+      - "<gray>Нарушений: %target_violations_color%%target_violations%"
+      - "<gray>Статус: %target_status%"
+      - ""
+      - "<gray>Последнее нарушение: %target_last_violation%"
+
+  10:
+    item: CLOCK
+    name: "<white>⏱ Время онлайн</white>"
+    lore:
+      - "<gray>Всего: %target_playtime%"
+
+  11:
+    item: BOOK
+    name: "<white>📝 История</white>"
+    lore:
+      - "<gray>Последние 5 нарушений"
+      - "%target_violation_history%"
+
+  12:
+    item: BARRIER
+    name: "<white>🚫 Бан/Мут</white>"
+    lore:
+      - "<gray>Статус: %target_punishment_status%"
+
+  14:
+    item: EMERALD
+    name: "<white>💰 Баланс</white>"
+    lore:
+      - "<gray>Баланс: %target_balance%"
+
+  15:
+    item: EXPERIENCE_BOTTLE
+    name: "<white>📊 Статистика</white>"
+    lore:
+      - "<gray>Убито мобов: %target_mobs_killed%"
+      - "<gray>Смертей: %target_deaths%"
+
+  22:
+    item: ARROW
+    name: "<gray>← Назад</gray>"
+    lore: []

@@ -1,0 +1,46 @@
+# Глобальные настройки проверок
+global:
+  enabled: true
+  debug: false
+  max-violations: 15
+  alert-threshold: 5
+
+# Speed
+speed:
+  enabled: true
+  sensitivity: 2.5
+  max-violations: 10
+  ground-multiplier: 1.0
+  air-multiplier: 1.3
+  ice-multiplier: 1.5
+
+# Fly
+fly:
+  enabled: true
+  max-violations: 8
+  air-time-threshold: 40
+  vertical-threshold: 0.1
+
+# KillAura
+killaura:
+  enabled: true
+  cps-threshold: 20
+  max-violations: 12
+  switch-threshold: 100 # ms
+
+# Reach
+reach:
+  enabled: true
+  max-distance: 3.2
+  max-violations: 10
+
+# NoFall
+nofall:
+  enabled: true
+  violation-threshold: 5
+  max-violations: 8
+# MorePackets
+morepackets:
+  enabled: true
+  threshold: 60  # Макс пакетов в секунду
+  max-violations: 10

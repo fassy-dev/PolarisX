@@ -1,0 +1,45 @@
+# GUI
+gui:
+  gradients: true
+  sounds: true
+
+# Уведомления
+alerts:
+  enabled: true
+  actionbar: false
+  console: true
+
+# Наказания
+punishments:
+  enabled: true
+
+# Логирование
+logging:
+  enabled: true
+
+# Отладка
+debug:
+  enabled: false
+
+# Чеки
+enabled-checks:
+  speed: true
+  fly: true
+  killaura: true
+  reach: true
+  nofall: true
+
+check:
+  speed:
+    max-violations: 10
+    sensitivity: 2.5
+  fly:
+    max-violations: 8
+    vertical-threshold: 0.1
+  killaura:
+    max-violations: 12
+    cps-threshold: 20
+  reach:
+    max-distance: 3.2
+  nofall:
+    violation-threshold: 5
